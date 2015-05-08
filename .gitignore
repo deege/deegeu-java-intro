@@ -5,3 +5,7 @@
 *.aup
 *.m4v
 *.au
+/fundamentals/006 - primitives - bytes/target/
+/fundamentals/007 - primitives - shorts/target/
+/fundamentals/010 - primitives - floatingpoint/target/
+/fundamentals/011 - primitives - booleans and chars/target/

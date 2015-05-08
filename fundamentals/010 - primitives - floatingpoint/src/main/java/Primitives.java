@@ -32,42 +32,18 @@ public class Primitives {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // -128 to 127
-        byte b = 42;
-        byte bb = 0b00101010;
-        byte bh = 0x2A;
-        System.out.println("byte b = " + b);
-        System.out.println("byte bb = " + bb);
-        System.out.println("byte bh = " + bh);
-        
-        // -32,768 to 32,767
-        short s = 10794;
-        short sb = 0b0010101000101010;
-        short sh = 0x2A2A;
-        System.out.println("short s = " + s);
-        System.out.println("short sb = " + sb);
-        System.out.println("short sh = " + sh);
-        
-        // -2^31 to (2^31)-1
-        int i = 707406378;
-        int ib = 0b00101010001010100010101000101010;
-        int ih = 0x2A2A2A2A;
-        System.out.println("integer i = " + i);
-        System.out.println("integer ib = " + ib);
-        System.out.println("integer ih = " + ih);
-        
-        // -2^63 to (2^63)-1
-        long l = 3038287259199220266L;
-        long lb = 0b0010101000101010001010100010101000101010001010100010101000101010L;
-        long lh = 0x2A2A2A2A2A2A2A2AL;
-        System.out.println("long l = " + l);
-        System.out.println("long lb = " + lb);
-        System.out.println("long lh = " + lh);
-        
+
         float f = 1.5113662e-13f;
         System.out.println("float f = " + f);
         float f2 = 0.00000000000015113662f;
         System.out.println("float f = " + f2);
+        
+        double d = 1.5113662e-13d;
+        System.out.println("double d = " + d);
+        double d2 = 0.000000000000015113662d;
+        System.out.println("double d2 = " + d2);
+        
+        
         int fh = Float.floatToRawIntBits(1.5113662e-13f);
         System.out.println(String.format("0x%8s", 
                 Integer.toHexString(fh)).replace(' ', '0'));
@@ -75,31 +51,15 @@ public class Primitives {
         // Floating point numbers can be tricky
         float fe = 0.1f + 0.2f; 
         System.out.printf("%.16f\n", fe);
-        double d = 0.1d + 0.2d;
-        System.out.printf("%.17f\n", d);
+        double de = 0.1d + 0.2d;
+        System.out.printf("%.17f\n", de);
         
-        // True or false
-        boolean bool = true;
-        System.out.println("Boolean b = " + bool);
-        
-        // one character
-        char c = 'A';
-        System.out.println("character c = " + c);
-        c = 65;  
-        System.out.println("character c = " + c);
-        c = 0x41;  
-        System.out.println("character c = " + c);
-        c = '☺';
-        System.out.println("character c = " + c);
-        System.out.println("character (as int) c = " + (int)c);
-                
-        // Unicode characters in names
-        double π = 3.14159;
-        System.out.println(π);
         
         // Making numbers easier to read
-        l = 0x7fff_ffff_ffff_ffffL;
+        f = 1_000_000.000_000f;
         d = 1_000_000.000_000;
+        System.out.println("float f = " + f);
+        System.out.println("double d = " + d);
    }
     
 }
