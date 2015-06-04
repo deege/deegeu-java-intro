@@ -21,40 +21,40 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.deegeu.conditionals1;
+package com.deegeu.switches;
 
 /**
- *
+ * This is the code for lesson 18, Java switches in the Free Java Online Course.
+ * 
  * @author dspiess
  */
-public class ConditionalsIfThen {
+public class SwitchStatement {
     public static void main(String args[]) {
-        int a = 6;
-        boolean myCondition = (a > 5);
-        
-        // simple if-then statement
-        if (myCondition) {
-            System.out.println("a is greater than 5");
+        char operation = '+';
+        int a = 23;
+        int b = 14;
+        switch (operation) {
+            case '+': {
+                System.out.println("a + b = " + (a + b));
+                break; // These are required to prevent fall-through
+            }
+            case '-': {
+                System.out.println("a - b = " + (a - b));
+                break;
+            }
+            case '/': {
+                System.out.println("a / b = " + (a / b));
+                break;
+            }
+            case '*': {
+                System.out.println("a * b = " + (a * b));
+                break;
+            }
+            default: { 
+                // The default statement should always be included. This 
+                // ensures every case is handled. 
+                System.out.println("Unknown operation");
+            }
         }
-        
-        // multiple if-then statements
-        if (a > 5) {
-            System.out.println("a is greater than 5");
-        } else if (a < 5) {
-            System.out.println("a is less than 5");
-        } else if (a == 5) {
-            System.out.println("a is equal to 5"); 
-        }
-        
-        // if-then-else with a default else
-        if (a > 5) {
-            System.out.println("a is greater than 5");
-        } else {
-            System.out.println("a is less than or equal to 5");
-        }
-        
-        // Simple ternary example
-        int b = (a > 5) ? 42 : 24;
-        System.out.println("b is equal to " + b);
     }
 }
