@@ -27,6 +27,9 @@ Each main section listed below, has a corresponding directory. Inside the direct
 
 This code is written and compiled for Java 8.
 
+The [Free Java Course Online playlist on YouTube.com](https://www.youtube.com/playlist?list=PLZlGOBonMjFVq9FF0eiS_emcFmP-0fSBe)
+
+
 ## Getting help
 
 If you are having troubles getting the source code, please see [Getting the source code](http://www.deegeu.com/getting-the-source-code/) or the video [How to get code from GitHub](http://www.deegeu.com/videos/how-to-get-code-from-github/)  
