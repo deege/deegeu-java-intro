@@ -24,7 +24,7 @@
 package com.deegeu.forloops;
 
 /**
- * This is the code for lesson 19, Java while loops in the Free Java Online Course.
+ * This is the code for lesson 20, Java for-loops loops in the Free Java Online Course.
  * 
  * @author dspiess
  */
